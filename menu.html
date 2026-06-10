@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La carte du Petit Moka : cafés de spécialité, boissons gourmandes et pâtisseries maison.">
+    <title>Notre carte — Le Petit Moka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">☕ Le Petit Moka</a>
+            <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html" class="active">Notre carte</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre carte</h1>
+            <p>Tous nos prix s'entendent service compris. Options végétales disponibles (avoine, soja, amande).</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+
+            <!-- Filtres de catégorie (gérés en JavaScript) -->
+            <div class="menu-filters" id="menu-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="cafe">Cafés</button>
+                <button class="filter-btn" data-filter="boisson">Autres boissons</button>
+                <button class="filter-btn" data-filter="patisserie">Pâtisseries</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <article class="menu-item" data-category="cafe">
+                    <h3>Espresso</h3>
+                    <p class="menu-desc">Pur arabica d'Éthiopie, notes florales et d'agrumes.</p>
+                    <span class="menu-price">2,20 €</span>
+                </article>
+                <article class="menu-item" data-category="cafe">
+                    <h3>Cappuccino</h3>
+                    <p class="menu-desc">Espresso, lait micro-moussé, cacao en option.</p>
+                    <span class="menu-price">4,50 €</span>
+                </article>
+                <article class="menu-item" data-category="cafe">
+                    <h3>Flat white</h3>
+                    <p class="menu-desc">Double espresso et lait velouté, le préféré de nos clients.</p>
+                    <span class="menu-price">4,80 €</span>
+                </article>
+                <article class="menu-item" data-category="cafe">
+                    <h3>Cold brew</h3>
+                    <p class="menu-desc">Infusion à froid 18 h, servi sur glace. Doux et désaltérant.</p>
+                    <span class="menu-price">5,00 €</span>
+                </article>
+                <article class="menu-item" data-category="boisson">
+                    <h3>Chocolat chaud maison</h3>
+                    <p class="menu-desc">Chocolat 70 % fondu minute, chantilly en option.</p>
+                    <span class="menu-price">5,20 €</span>
+                </article>
+                <article class="menu-item" data-category="boisson">
+                    <h3>Thé matcha latte</h3>
+                    <p class="menu-desc">Matcha cérémonie du Japon, lait au choix.</p>
+                    <span class="menu-price">5,50 €</span>
+                </article>
+                <article class="menu-item" data-category="boisson">
+                    <h3>Jus d'orange pressé</h3>
+                    <p class="menu-desc">Pressé à la commande, oranges de saison.</p>
+                    <span class="menu-price">4,00 €</span>
+                </article>
+                <article class="menu-item" data-category="patisserie">
+                    <h3>Croissant au beurre</h3>
+                    <p class="menu-desc">Pur beurre AOP, cuit sur place chaque matin.</p>
+                    <span class="menu-price">1,80 €</span>
+                </article>
+                <article class="menu-item" data-category="patisserie">
+                    <h3>Cookie chocolat-noisette</h3>
+                    <p class="menu-desc">Le best-seller. Cœur fondant, noisettes torréfiées.</p>
+                    <span class="menu-price">3,20 €</span>
+                </article>
+                <article class="menu-item" data-category="patisserie">
+                    <h3>Carrot cake</h3>
+                    <p class="menu-desc">Recette de notre cheffe, glaçage cream cheese.</p>
+                    <span class="menu-price">4,50 €</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Le Petit Moka</h4>
+                <p>14 rue des Lilas<br>75011 Paris</p>
+            </div>
+            <div>
+                <h4>Horaires</h4>
+                <p>Lun – Ven : 7h30 – 19h<br>Sam – Dim : 9h – 18h</p>
+            </div>
+            <div>
+                <h4>Suivez-nous</h4>
+                <p>
+                    <a href="#">Instagram</a> ·
+                    <a href="#">Facebook</a> ·
+                    <a href="#">TikTok</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Le Petit Moka — Site de démonstration à but pédagogique.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

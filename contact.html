@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Le Petit Moka : adresse, horaires et formulaire de contact.">
+    <title>Contact — Le Petit Moka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">☕ Le Petit Moka</a>
+            <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Notre carte</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question, une privatisation, une réclamation ? Écrivez-nous.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- Coordonnées -->
+            <div class="contact-info">
+                <h2>Nous trouver</h2>
+                <p>
+                    <strong>📍 Adresse</strong><br>
+                    14 rue des Lilas, 75011 Paris<br>
+                    Métro : Parmentier (ligne 3)
+                </p>
+                <p>
+                    <strong>📞 Téléphone</strong><br>
+                    01 23 45 67 89
+                </p>
+                <p>
+                    <strong>✉️ E-mail</strong><br>
+                    bonjour@lepetitmoka.fr
+                </p>
+                <p>
+                    <strong>🕐 Horaires</strong><br>
+                    Lun – Ven : 7h30 – 19h<br>
+                    Sam – Dim : 9h – 18h
+                </p>
+            </div>
+
+            <!-- Formulaire avec validation JavaScript -->
+            <form class="contact-form" id="contact-form" novalidate>
+                <h2>Envoyer un message</h2>
+
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" placeholder="Jeanne Dupont" required>
+                    <span class="error-message" id="error-name"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse e-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="jeanne@exemple.fr" required>
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject">
+                        <option value="question">Question générale</option>
+                        <option value="privatisation">Privatisation / événement</option>
+                        <option value="presse">Demande presse</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message * <span class="char-count" id="char-count">0 / 500</span></label>
+                    <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Votre message…" required></textarea>
+                    <span class="error-message" id="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+
+                <!-- Message de confirmation affiché par le JS après envoi -->
+                <p class="form-success" id="form-success" hidden>
+                    ✅ Merci ! Votre message a bien été envoyé. Nous vous répondrons sous 48 h.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Le Petit Moka</h4>
+                <p>14 rue des Lilas<br>75011 Paris</p>
+            </div>
+            <div>
+                <h4>Horaires</h4>
+                <p>Lun – Ven : 7h30 – 19h<br>Sam – Dim : 9h – 18h</p>
+            </div>
+            <div>
+                <h4>Suivez-nous</h4>
+                <p>
+                    <a href="#">Instagram</a> ·
+                    <a href="#">Facebook</a> ·
+                    <a href="#">TikTok</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Le Petit Moka — Site de démonstration à but pédagogique.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
